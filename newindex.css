@@ -1,0 +1,317 @@
+@font-face {
+    font-family: Azosans-medium;
+    src: url(./fonts/AzoSans-Medium.ttf);
+}
+@font-face {
+    font-family: Azosans-bold;
+    src: url(./fonts/AzoSans-Bold.ttf);
+}
+@font-face {
+    font-family: Azosans-regular;
+    src: url(./fonts/AzoSans-Regular.ttf);
+}
+body {
+    background-color: #2936A2;
+    min-height: 100vh;
+    margin: 0px;
+    padding:0px;
+}
+
+.login-text {
+    color: #ffffff;
+    transition: .5s all linear;
+}
+.login-text:hover {
+    color: #79C91B;
+}
+.nav-list-items {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .3s all linear;
+    font-size: 13px;
+    font-family: Azosans-regular;
+    overflow: hidden;
+}
+.nav-list-items::after {
+    content: "";
+    width: 0;
+    height:2px;
+    position:absolute;
+    top: 30px;
+    left: 20px;
+    transition: .3s all linear;
+
+}
+.nav-list-items:hover::after {
+    color: #79C91B;
+    width: 100%;
+    background-image: linear-gradient(to right, #70C618, #C1FA7F);
+    border-radius: 10px;
+}
+.nav-list-items:hover {
+    color: #79C91B;
+    
+} 
+.login-arrow::after {
+    content: "\e900";
+    font-family: icomoon;
+    font-size: 18px;
+    color: #ffffff;
+}
+.login-nav-link {
+    position: relative;
+    min-width: 110px;
+    transition: .3s all linear;
+}
+.arrowBtn{
+    width: 20px;
+    transition: 0.5s linear;
+}
+.loginBtns1{
+    color: #79C91B;
+    font-family:"azo-sans-web";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    padding-left: 2px; 
+    text-decoration: none;
+}
+.logLink{
+    text-decoration: none;
+}
+.logLink:hover .arrowBtn{
+    transform: rotate(360deg);
+}
+
+
+.section2-img{
+    /* width:835px;
+     height:566px;*/
+     position:relative;
+     animation: roundbox 2s infinite linear;
+     animation-direction:normal;
+     transition:.1s all linear;
+ }
+ @keyframes roundbox {
+0%{left:0px; bottom:0px;}
+50%{left:0px;bottom:75px}
+100%{left:0px; bottom:10px;}
+
+ }
+
+.partnerships-container {
+    padding-top:70px;
+}
+.inner-partnerships-container {
+    width:35%
+}
+.partnerships-heading-text {
+    font-size: 50px;
+    font-family: Azosans-bold;
+}
+.morb-non-text {
+    font-size: 24px;
+    color:#79C91B;
+    font-family: Azosans-regular;
+}
+.cards-container {
+    list-style-type: none;
+    font-family: Azosans-bold;
+}
+.card-heading {
+    opacity: 50%;
+    font-size: 24px;
+    max-width:130px;
+}
+.right-arrow {
+    opacity: 0.5;
+    font-size: 22px;
+}
+.each-card {
+    width:280px;
+    height: 280px;
+    background-color: #20267B;
+    border-radius:16px;
+    border-top-left-radius: 26px;
+    color:#ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.each-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left:0;
+    bottom:0;
+    transition: .3s all linear;
+}
+.each-card:hover::before  {
+    background-image: url(Panel.png);
+    top:0;
+}
+.each-card:hover .card-heading{
+    color: #0063C5;
+    transition: .5s linear;
+    opacity: 99%;
+}
+
+.card-number {
+    background-color: #79C91B;
+    color:#ffffff;
+    font-weight: bold;
+    width:30px;
+    height:30px;
+    font-size: 16px;
+    border-radius: 7px;
+    transform: rotate(45deg);
+    position: relative;
+}
+.number-one::after {
+    content: "01";
+    position: absolute;
+    top:4px;
+    left:5px;
+    color: white;
+    transform: rotate(-45deg);
+}
+.number-two::after {
+    content: "02";
+    position: absolute;
+    top:4px;
+    left:5px;
+    color: white;
+    transform: rotate(-45deg);
+}
+.number-three:after {
+    content: "03";
+    position: absolute;
+    top:4px;
+    left:5px;
+    color: white;
+    transform: rotate(-45deg);
+}
+.number-four::after {
+    content: "04";
+    position: absolute;
+    top:4px;
+    left:5px;
+    color: white;
+    transform: rotate(-45deg);
+}
+.how-our-text {
+    font-size: 40px;
+    font-family: Azosans-bold;
+}
+.how-our-sibling-para-text {
+    font-size: 16px;
+    font-family: Azosans-regular;
+}
+.input-field-name, .input-field-email  {
+    background-color: rgb(255, 255, 255, 0.08);
+    border: 0px;
+    outline: 0px;
+    color: #ffffff;
+    width: 210px;
+    height: 40px;
+    border-radius: 30px;
+}
+.input-field-name::-webkit-input-placeholder, .input-field-email::-webkit-input-placeholder {
+    color:#ffffff;
+}
+.submit-btn {
+    background-color: #79C91B;
+    border: 1px solid #70C618;
+    width: 210px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 30px;
+}
+.submit-cont::after {
+    content: "\e900";
+    font-family: icomoon;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 18px;
+} 
+.submit-btn:hover {
+     background-color:skyblue;
+}
+.footer-heading {
+    content: "";
+    border-bottom: 3px solid #70C618;
+    max-width:140px;
+    font-family: Azosans-bold;
+}
+.footer-form {
+    font-family: Azosans-regular;
+}
+.get-in-touch-cont {
+    font-family: Azosans-regular;
+}
+.address-cont {
+    width:55%;
+}
+.get-in-touch-number, .get-in-touch-email {
+    color: #79C91B;
+    text-decoration: none;
+}
+.get-in-touch-number:hover, .get-in-touch-email:hover {
+    color: #79C91B;
+}
+
+.quick-links {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s all linear;
+    font-family: Azosans-regular;
+    transition: .3s all linear;
+}
+.quick-links:hover {
+    color:#79C91B;
+    text-decoration: none;
+    
+}
+.linkedin-icon::after {
+    content: "\e902";
+    font-family: icomoon;
+    color: #ffffff;
+    font-size: 38px;
+    text-decoration: none;
+}
+.linkedin-icon:hover {
+    color:hotpink;
+} 
+.icon:hover{
+    color:hotpink;
+}
+.facebook-icon::after {
+    content: "\e901";
+    font-family: icomoon;
+    color:#ffffff;
+    font-size: 35px;
+}
+.facebook-icon:hover {
+   color: hotpink;
+}
+.footer-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+} 
+.footer-logo {
+    position: relative;
+}
+.footer-logo:hover {
+    bottom:25px;
+}
+.inner-copy-right-content {
+    min-width: 70%;
+}
+.copy-right-text {
+    font-size: 10px;
+    font-family: Azosans-regular;
+    text-align: center;
+}
