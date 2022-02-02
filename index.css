@@ -262,8 +262,9 @@ body {
     text-decoration: none;
     color: #ffffff;
     transition: 0.3s all linear;
-    font-family: Azosans-regular;
-    transition: .3s all linear;
+    font-family: Azo Sans, sans-serif;
+    font-weight:400;
+  
 }
 .quick-links:hover {
     color:#79C91B;
